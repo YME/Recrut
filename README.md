@@ -1,2 +1,3 @@
 # Recrut
-Program to help filter student applications 
+
+Script used to help HR stort all the candidates.
