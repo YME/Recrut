@@ -10,8 +10,7 @@ public class Main {
         }
 
 
-        CSV kek = new CSV("/home/herulume/Desktop/cona.csv");
-        System.out.println("CONA");
+        CSV kek = new CSV("/");
 
     }
 }
