@@ -1,5 +1,3 @@
-package pt.yme;
-
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
@@ -56,9 +54,18 @@ public class CSV {
     // getters
     // no need for setters yet
 
-    public HashMap<String, ArrayList<String>> getQuestions() { return questions; }
+    public HashMap<String, ArrayList<String>> getQuestions(){
+        HashMap<String, ArrayList<String>> _questions;
+        _questions = new HashMap<String, ArrayList<String>>();
+
+        this.questions.forEach((k,v) -> _questions.put(k, new ArrayList<String>(v)));
+
+        return _questions;
+    }
 
     public int getNquestions() { return nquestions; }
 
-    public ArrayList<String> getKeys() { return keys; }
+    public ArrayList<String> getKeys() {
+        return new ArrayList<>(keys);
+    }
 }
